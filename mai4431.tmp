@@ -1,0 +1,108 @@
+[gd_scene load_steps=3 format=3 uid="uid://l3ok3uxvf6bl"]
+
+[ext_resource type="Texture2D" uid="uid://bpy2ejnuip4oq" path="res://IMG_0609.jpg" id="1_xn8ty"]
+[ext_resource type="Script" path="res://GamelanBackground.gd" id="2_s6aws"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GamelanBackground" type="Sprite2D" parent="." node_paths=PackedStringArray("Key1", "Key2", "Key3", "Key4", "Key5", "Key6", "Key7", "Key8", "Key9", "Key10", "Key11", "Key12")]
+position = Vector2(577, 350)
+scale = Vector2(0.287037, 0.287037)
+texture = ExtResource("1_xn8ty")
+script = ExtResource("2_s6aws")
+Key1 = NodePath("Key1")
+Key2 = NodePath("Key2")
+Key3 = NodePath("Key3")
+Key4 = NodePath("Key4")
+Key5 = NodePath("Key5")
+Key6 = NodePath("Key6")
+Key7 = NodePath("Key7")
+Key8 = NodePath("Key8")
+Key9 = NodePath("Key9")
+Key10 = NodePath("Key10")
+Key11 = NodePath("Key11")
+Key12 = NodePath("Key12")
+
+[node name="Key1" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-2031.1, -1222.84)
+scale = Vector2(3.48387, 3.48387)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(99, 500, 121, 154, 213, 162, 193, 501)
+
+[node name="Key2" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1674.09, -1179.51)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(99, 500, 121, 154, 213, 162, 193, 501)
+
+[node name="Key3" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1257.68, -1146.19)
+scale = Vector2(2.83677, 3.31066)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(99, 500, 121, 154, 213, 162, 193, 501)
+
+[node name="Key4" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-963.09, -1102.46)
+scale = Vector2(2.96771, 3.1671)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(99, 500, 121, 154, 213, 162, 193, 501)
+
+[node name="Key5" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-661.755, -1050.29)
+scale = Vector2(2.92691, 2.97256)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(99, 500, 121, 154, 213, 162, 193, 501)
+
+[node name="Key6" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-271.742, -919.742)
+scale = Vector2(2.45899, 2.5363)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(102.009, 145.602, 192.683, 142.855, 187.016, 519.222, 90.6743, 520.596)
+
+[node name="Key7" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-66.1936, -1090.45)
+scale = Vector2(3.24368, 3.28596)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(100.961, 159.034, 172.922, 162.215, 163.255, 454.838, 89.1461, 447.416)
+
+[node name="Key8" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(118.452, -1093.94)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(121.255, 161.659, 188.618, 163.718, 182.4, 432.463, 112.964, 428.344)
+
+[node name="Key9" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1674.09, -1179.51)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(734.291, 184.89, 800.618, 187.979, 795.436, 454.665, 729.109, 452.605)
+
+[node name="Key10" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1674.09, -1179.51)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(808.909, 193.128, 873.164, 193.128, 871.091, 451.576, 807.873, 447.457)
+
+[node name="Key11" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1674.09, -1179.51)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(892.854, 194.157, 949.854, 196.217, 942.6, 445.398, 888.709, 445.398)
+
+[node name="Key12" type="Polygon2D" parent="GamelanBackground"]
+position = Vector2(-1674.09, -1179.51)
+scale = Vector2(3.36163, 3.38347)
+color = Color(0, 1, 0, 1)
+invert_border = 5.0
+polygon = PackedVector2Array(963.327, 202.395, 1006.85, 200.335, 1014.11, 447.457, 960.218, 446.427)
