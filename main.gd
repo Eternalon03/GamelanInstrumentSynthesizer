@@ -19,6 +19,8 @@ func get_child_by_type(Parent, T):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$GamelanBackground.position.x = get_viewport().get_visible_rect().size.x / 2.0
+	$PlayButton.position.x = get_viewport().get_visible_rect().size.x - 1150
 	scrollBar.get_v_scroll_bar().changed.connect(scroll_to_bottom)
 	# deals with audio
 	self.add_child(speler);
@@ -38,8 +40,9 @@ func _ready():
 	beat_timer.one_shot = true
 	# keeps track of all keys
 	for key in $GamelanBackground.get_children():
-		key.input_event.connect(clicked_key_event.bind(int(str(key.name).split("_")[1]) - 1))
-		keys.append(key)
+		if key is Area2D:
+			key.input_event.connect(clicked_key_event.bind(int(str(key.name).split("_")[1]) - 1))
+			keys.append(key)
 	
 	
 func add_to_notes(note):
@@ -52,10 +55,11 @@ func _process(delta):
 	if beat_timer.time_left == 0 and is_beat_active:
 		beat_timer.start()
 		add_to_notes('-')
-	for i in range(keys.size()):
+	for i in range(keys.size() * 2):
 		# JUST PRESSED IS IMPORTANT FOR QUEUED SOUNDS TO WORK
 		if Input.is_action_just_pressed("KEY" + str(i + 1)):
-			add_to_notes(str(i+1))
+			if i > 11: add_to_notes(str(i - 11) + "^") 
+			else : add_to_notes(str(i+1))
 			if timer.time_left == 0:
 				play_audio_and_visual_cue(i)
 			elif i not in queued_sounds:
@@ -83,6 +87,11 @@ func play_audio_and_visual_cue(key_index: int):
 	speler.stream = load("res://sound_bytes/" + str(key_index + 1) + ".wav");
 	speler.play()
 	timer.start()
+	var key_color: Color = Color(0.498039, 1, 0, 1)
+	if key_index > 11: 
+		key_index = key_index - 12
+		key_color = Color(0, 1, 1, 1)
+	get_child_by_type(keys[key_index], Polygon2D).set_color(key_color)
 	var tween: Tween = create_tween()
 	tween.tween_property(get_child_by_type(keys[key_index], Polygon2D), "modulate:a", 0, fade_duration).from(1)
 
@@ -97,6 +106,9 @@ func clicked_key_event(viewport, event, shape, key_index):
 func on_resize():
 	noteBackground.size.x = get_viewport().get_visible_rect().size.x
 	noteBackground.size.y = get_viewport().get_visible_rect().size.y - 520
+	$GamelanBackground.position.x = get_viewport().get_visible_rect().size.x / 2.0
+	$PlayButton.position.x = get_viewport().get_visible_rect().size.x - 1150
+	
 	
 func scroll_to_bottom():
 	scrollBar.scroll_vertical = scrollBar.get_v_scroll_bar().max_value
