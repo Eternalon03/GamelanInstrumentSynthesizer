@@ -1,4 +1,4 @@
-Play In Browser: https://github.com/Eternalon03/GamelanInstrumentSynthesizer
+Play In Browser: [Itch.io](https://eternalon03.itch.io/gamelan-instrument-synthesizer)
 
 List of Technical specs:
 
