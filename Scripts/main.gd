@@ -84,7 +84,7 @@ func _on_play_button_input_event(viewport: Node, event: InputEvent, shape_idx: i
 			
 			
 func play_audio_and_visual_cue(key_index: int):
-	speler.stream = load("res://sound_bytes/" + str(key_index + 1) + ".wav");
+	speler.stream = load("res://Sound_Effects/" + str(key_index + 1) + ".wav");
 	speler.play()
 	timer.start()
 	var key_color: Color = Color(0.498039, 1, 0, 1)
