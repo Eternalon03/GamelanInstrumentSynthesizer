@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4rlv6boifg8s"
-path="res://.godot/imported/actual_gamelan_sprite.png-4945908fd9b8627e0e882a99ec8e0a54.ctex"
+uid="uid://ck8pc5dfmjf1m"
+path="res://.godot/imported/whitepause.png-5d0f8f399e1db606a2ebb9975ae2410f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://actual_gamelan_sprite.png"
-dest_files=["res://.godot/imported/actual_gamelan_sprite.png-4945908fd9b8627e0e882a99ec8e0a54.ctex"]
+source_file="res://Sprites/whitepause.png"
+dest_files=["res://.godot/imported/whitepause.png-5d0f8f399e1db606a2ebb9975ae2410f.ctex"]
 
 [params]
 

@@ -1,14 +1,14 @@
 [gd_scene load_steps=15 format=3 uid="uid://l3ok3uxvf6bl"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_k446t"]
-[ext_resource type="Texture2D" uid="uid://sedcqc4kane0" path="res://wood-surface-with-aged-look-coarse-appearance.jpg" id="2_erexa"]
-[ext_resource type="Texture2D" uid="uid://c6f5kosi2x2rv" path="res://line.png" id="3_cki0b"]
-[ext_resource type="Texture2D" uid="uid://bildwxkoddny0" path="res://numbers.png" id="3_pc2ef"]
-[ext_resource type="Texture2D" uid="uid://c4rlv6boifg8s" path="res://actual_gamelan_sprite.png" id="3_wikpc"]
-[ext_resource type="Texture2D" uid="uid://rhg75pdgprdc" path="res://paper-texture.png" id="4_b0kss"]
-[ext_resource type="Texture2D" uid="uid://lpw28wqcrg8w" path="res://Black-Blur-PNG-Pic.png" id="4_jeojo"]
-[ext_resource type="Texture2D" uid="uid://bko80wl4gyn2r" path="res://whiteplay.png" id="6_qvxxj"]
-[ext_resource type="Texture2D" uid="uid://ck8pc5dfmjf1m" path="res://whitepause.png" id="7_mgvqm"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_k446t"]
+[ext_resource type="Texture2D" uid="uid://sedcqc4kane0" path="res://Sprites/wood-surface-with-aged-look-coarse-appearance.jpg" id="2_erexa"]
+[ext_resource type="Texture2D" uid="uid://c6f5kosi2x2rv" path="res://Sprites/line.png" id="3_cki0b"]
+[ext_resource type="Texture2D" uid="uid://bildwxkoddny0" path="res://Sprites/numbers.png" id="3_pc2ef"]
+[ext_resource type="Texture2D" uid="uid://c4rlv6boifg8s" path="res://Sprites/actual_gamelan_sprite.png" id="3_wikpc"]
+[ext_resource type="Texture2D" uid="uid://rhg75pdgprdc" path="res://Sprites/paper-texture.png" id="4_b0kss"]
+[ext_resource type="Texture2D" uid="uid://lpw28wqcrg8w" path="res://Sprites/Black-Blur-PNG-Pic.png" id="4_jeojo"]
+[ext_resource type="Texture2D" uid="uid://bko80wl4gyn2r" path="res://Sprites/whiteplay.png" id="6_qvxxj"]
+[ext_resource type="Texture2D" uid="uid://ck8pc5dfmjf1m" path="res://Sprites/whitepause.png" id="7_mgvqm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3iysk"]
 texture = ExtResource("4_b0kss")

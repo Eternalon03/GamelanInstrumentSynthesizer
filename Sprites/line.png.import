@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lpw28wqcrg8w"
-path="res://.godot/imported/Black-Blur-PNG-Pic.png-c9dde3eb6e807583855903988c534943.ctex"
+uid="uid://c6f5kosi2x2rv"
+path="res://.godot/imported/line.png-e7b1e17bb161e25cb5c064a7238825b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Black-Blur-PNG-Pic.png"
-dest_files=["res://.godot/imported/Black-Blur-PNG-Pic.png-c9dde3eb6e807583855903988c534943.ctex"]
+source_file="res://Sprites/line.png"
+dest_files=["res://.godot/imported/line.png-e7b1e17bb161e25cb5c064a7238825b3.ctex"]
 
 [params]
 

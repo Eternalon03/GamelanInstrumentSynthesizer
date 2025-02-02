@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5c4l5gasy8gj"
-path="res://.godot/imported/MOSHED-2025-2-1-12-26-24.jpg-72f84ba55edda58bc56b0a8a5076dde0.ctex"
+uid="uid://sedcqc4kane0"
+path="res://.godot/imported/wood-surface-with-aged-look-coarse-appearance.jpg-b1398cdd7697a7d5938398ec5fbcdf48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MOSHED-2025-2-1-12-26-24.jpg"
-dest_files=["res://.godot/imported/MOSHED-2025-2-1-12-26-24.jpg-72f84ba55edda58bc56b0a8a5076dde0.ctex"]
+source_file="res://Sprites/wood-surface-with-aged-look-coarse-appearance.jpg"
+dest_files=["res://.godot/imported/wood-surface-with-aged-look-coarse-appearance.jpg-b1398cdd7697a7d5938398ec5fbcdf48.ctex"]
 
 [params]
 

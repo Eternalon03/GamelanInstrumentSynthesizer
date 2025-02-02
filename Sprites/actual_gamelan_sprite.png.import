@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sedcqc4kane0"
-path="res://.godot/imported/wood-surface-with-aged-look-coarse-appearance.jpg-e85b474759386691ae39030821f9780f.ctex"
+uid="uid://c4rlv6boifg8s"
+path="res://.godot/imported/actual_gamelan_sprite.png-04c25e93eda35090a431113a9b2ef7a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://wood-surface-with-aged-look-coarse-appearance.jpg"
-dest_files=["res://.godot/imported/wood-surface-with-aged-look-coarse-appearance.jpg-e85b474759386691ae39030821f9780f.ctex"]
+source_file="res://Sprites/actual_gamelan_sprite.png"
+dest_files=["res://.godot/imported/actual_gamelan_sprite.png-04c25e93eda35090a431113a9b2ef7a0.ctex"]
 
 [params]
 
