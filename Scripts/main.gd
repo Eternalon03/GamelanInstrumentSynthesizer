@@ -24,14 +24,14 @@ func _ready():
 	add_child(timer)
 	timer.wait_time = Utils.timer_duration
 	timer.one_shot = true
-	# timer that adds a dash to the notes every x secs, to mimic guitar tabs
+	# timer that adds a dash to the notes every 0.2 secs, to mimic guitar tabs
 	add_child(beat_timer)
-	beat_timer.wait_time = Utils.timer_duration
+	beat_timer.wait_time = 0.2
 	beat_timer.one_shot = true
 	# keeps track of all keys
 	for key in $GamelanBackground.get_children():
 		if key is Area2D:
-			key.input_event.connect(clicked_key_event.bind(int(str(key.name).split("_")[1]) - 1))
+			key.input_event.connect(clicked_key_event.bind(int(str(key.name).split("_")[1])))
 			keys.append(key)
 	
 	
@@ -87,7 +87,7 @@ func play_audio_and_visual_cue(key_index: int):
 
 func clicked_key_event(viewport, event, shape, key_index):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		add_to_notes(str(key_index+1))
+		add_to_notes(str(key_index))
 		if timer.time_left == 0:
 			play_audio_and_visual_cue(key_index)
 		elif key_index not in queued_sounds:
